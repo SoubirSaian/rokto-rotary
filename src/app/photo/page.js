@@ -15,7 +15,9 @@ const page = () => {
 
             <div className='flex flex-col items-center my-6'>
                 <input type="text" name="firstName" className='outline-none w-[40%] p-2 m-4 border-2 border-[#dab95c] bg-[#df2926] rounded' placeholder='First Name'/>
+
                 <input type="text" name="MiddleName" className='outline-none w-[40%] p-2 m-4 border-2 border-[#dab95c] bg-[#df2926] rounded' placeholder='Middle Name'/>
+                
                 <input type="text" name="LastName" className='outline-none w-[40%] p-2 m-4 border-2 border-[#dab95c] bg-[#df2926] rounded' placeholder='Last Name'/>
             </div>
 

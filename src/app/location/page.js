@@ -1,8 +1,46 @@
-import React from 'react';
+"use client"
+
+import React, { useState } from 'react';
+import { Country, State, City }  from 'country-state-city';
+
+
 
 const page = () => {
+    
+    // console.log(Country.getAllCountries()[0]);
+    // console.log(Country.getAllCountries())
+    // console.log(State.getAllStates())
+
+    const [selectedCountry, setSelectedCountry] = useState('');
+
+    const [states, setStates] = useState([]);
+
+    const [cities, setCities] = useState([]);
+
+    const allCountries = Country.getAllCountries(); // it's an Array
+
+
+    const handleCountryChange = (e) => {
+        const countryCode = e.target.value 
+        setSelectedCountry(countryCode)
+        setCities([])
+
+        const fetchedStates = State.getStatesOfCountry(countryCode)
+        setStates(fetchedStates)
+    }
+
+
+    const handleStateChange = (e) => {
+        const stateCode = e.target.value
+
+        const fetchedCities = City.getCitiesOfState(selectedCountry, stateCode)
+        setCities(fetchedCities)
+    }
+    
+
     return (
         <div className='my-4'>
+            
             <h2 className='text-center text-[#dab95c] text-3xl '>You are successfully signed in</h2>
             <hr className='mx-auto w-[40%] h-1 bg-[#dab95c]' />
 
@@ -14,13 +52,69 @@ const page = () => {
                     <hr className='mx-auto w-[40%] h-1 bg-[#dab95c]' />
 
                     <div className='flex justify-around items-center my-4'>
-                        <label className='text-3xl text-semibold' >City, Country</label>
-                        <input className='outline-none border-2 border-[#dab95c] bg-[#df2926] px-4 py-2 rounded' type='text' />
+                        <label className='text-3xl text-semibold' >Country</label>
+                        <select className='w-[40%] outline-none border-2 border-[#dab95c] bg-[#df2926] px-12 py-3 rounded' value={selectedCountry} onChange={handleCountryChange}> 
+                            <option value="">Select Country</option>
+                            { 
+                            allCountries.map((country) => (
+                                <option 
+                                    key={country.isoCode} 
+                                    value={country.isoCode}
+                                    className='text-black'
+                                >
+
+                                    {country.name}
+
+                                </option>
+                            ))}
+                        </select>
                     </div>
 
                     <div className='flex justify-around items-center my-4'>
-                        <label className='text-3xl text-semibold' >Language</label>
-                        <input className='outline-none border-2 border-[#dab95c] bg-[#df2926] px-4 py-2 rounded' type="text" />
+                        <label className='text-3xl text-semibold' >State</label>
+                        <select className='w-[40%] outline-none border-2 border-[#dab95c] bg-[#df2926] px-12 py-3 rounded' onChange={handleStateChange} disabled={!states.length}> 
+                            <option value="">Select State</option>
+                            {
+                                states.map((state) => (
+                                    <option 
+                                        key={state.isoCode}
+                                        value={state.isoCode}
+                                        className='text-black'
+                                    >
+                                        {state.name}
+                                    </option>
+                                ))
+                            }
+                        </select>
+                    </div>
+
+                    <div className='flex justify-around items-center my-4'>
+                        <label className='text-3xl text-semibold' >City</label>
+                        <select className='w-[40%] outline-none border-2 border-[#dab95c] bg-[#df2926] px-12 py-3 rounded' disabled={!cities.length}> 
+                            <option value="">Select City</option>
+                            {
+                                cities.map((city) => (
+                                    <option
+                                        key={city.name}
+                                        value={city.name}
+                                        className='text-black'
+                                    >
+                                        {city.name}
+                                    </option>
+                            ))}
+                        </select>
+                    </div>
+                     
+
+                    <div className='flex justify-around items-center my-4'>
+                        <label htmlFor='language' className='text-3xl text-semibold' >Language</label>
+                        
+                        <select className='w-[40%] outline-none border-2 border-[#dab95c] bg-[#df2926] px-12 py-3 rounded' id="language">
+                            <option>Select language</option>
+                            <option value="bangla">Bangla</option>
+                            <option value="english">English</option>
+                            <option value="hindi">Hindi</option>
+                        </select>
                     </div>
 
                 </div>

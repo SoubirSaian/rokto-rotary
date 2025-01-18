@@ -1,4 +1,5 @@
 import React from 'react';
+// import OtpInput from "otp-input-react";
 
 const page = () => {
     return (
@@ -19,13 +20,17 @@ const page = () => {
                         <label className='text-3xl text-semibold' >6 Digit <br /> Code</label>
 
                         <div>
+                            
 
-                            <input className='outline-none border-b-2 border-[#dab95c] bg-[#df2926] w-[25px] m-3'   type="text" />
-                            <input className='outline-none border-b-2 border-[#dab95c] bg-[#df2926] w-[25px] m-3'   type="text" />
-                            <input className='outline-none border-b-2 border-[#dab95c] bg-[#df2926] w-[25px] m-3'   type="text" />
-                            <input className='outline-none border-b-2 border-[#dab95c] bg-[#df2926] w-[25px] m-3'   type="text" />
-                            <input className='outline-none border-b-2 border-[#dab95c] bg-[#df2926] w-[25px] m-3'   type="text" />
-                            <input className='outline-none border-b-2 border-[#dab95c] bg-[#df2926] w-[25px] m-3'   type="text" />
+                            {/* <OTPInput className='outline-none border-b-2 border-[#dab95c] bg-[#df2926] w-[25px] m-3'
+                                OTPLength={6}
+                                otpType='number'
+                                disabled={false}
+                                autoFocus
+                            >
+
+                            </OTPInput> */}
+                            
 
                             <button className='block ml-[60%]  px-2 py-1 text-2xl border border-[#dab95c] hover:bg-[#dab95c] rounded'>Resend</button>
                             {/* <button className='block mx-auto w-[20%] my-3 px-4 py-2 text-2xl font-semibold bg-[#dab95c] rounded'>Resend</button> */}
