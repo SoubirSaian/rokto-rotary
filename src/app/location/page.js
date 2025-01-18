@@ -5,7 +5,7 @@ import { Country, State, City }  from 'country-state-city';
 
 
 
-const page = () => {
+const Page = () => {
     
     // console.log(Country.getAllCountries()[0]);
     // console.log(Country.getAllCountries())
