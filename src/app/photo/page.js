@@ -1,6 +1,6 @@
 import React from 'react';
 
-const page = () => {
+const Photo = () => {
     return (
         <div className='my-6'>
             <div className='w-[15%] mx-auto h-50 p-10 rounded-full border border-[#dab95c] bg-[#dab95c] cursor-pointer'>
@@ -70,4 +70,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Photo;

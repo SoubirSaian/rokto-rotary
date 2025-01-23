@@ -1,6 +1,6 @@
 import React from 'react';
 
-const page = () => {
+const Terms = () => {
     return (
         <div className='my-6'>
             <h2 className='text-center text-2xl text-white'>Terms Of Reference</h2>
@@ -15,4 +15,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Terms;

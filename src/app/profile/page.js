@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const page = () => {
+const Profile = () => {
     return (
         <div>
             <div className='w-[60%] mx-auto flex flex-col items-center my-12'>
@@ -168,4 +168,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Profile;

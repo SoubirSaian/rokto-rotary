@@ -1,6 +1,6 @@
 import React from 'react';
 
-const page = () => {
+const Eligiblity = () => {
     return (
         <div className='w-[80%] mx-auto my-6'>
 
@@ -53,4 +53,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Eligiblity;

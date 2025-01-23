@@ -4,7 +4,7 @@ import Image from 'next/image';
 import touchId from  '@/assets/fingerprint.png';
 import faceId from  '@/assets/faceId.png';
 
-const page = () => {
+const Signup = () => {
     return (
         <div>
 
@@ -48,4 +48,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Signup;

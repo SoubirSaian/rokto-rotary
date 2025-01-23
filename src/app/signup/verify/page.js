@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 
-const page = () => {
+const Verify = () => {
     const [otp,setOtp] = useState(new Array(6).fill(''));
 
     const handleChange = (e,indx) => {
@@ -69,4 +69,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Verify;

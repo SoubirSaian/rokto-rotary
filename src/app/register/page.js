@@ -1,6 +1,6 @@
 import React from 'react';
 
-const page = () => {
+const Register = () => {
     return (
         <div className='my-36'>
             <form className='mx-auto w-[60%]  my-4'>
@@ -26,4 +26,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Register;

@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 
-const page = () => {
+const Optional = () => {
     return (
         <div>
             <h2 className='text-center text-2xl text-white'>Optional Record</h2>
@@ -86,4 +86,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Optional;

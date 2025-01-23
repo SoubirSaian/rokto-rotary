@@ -1,6 +1,6 @@
 import React from 'react';
 
-const page = () => {
+const Health = () => {
     return (
         <div className='w-[80%] mx-auto my-4'>
             <div>
@@ -179,4 +179,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Health;
