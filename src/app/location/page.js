@@ -109,7 +109,7 @@ const Page = () => {
                     <div className='flex justify-around items-center my-4'>
                         <label htmlFor='language' className='text-3xl text-semibold' >Language</label>
                         
-                        <select className='w-[40%] outline-none border-2 border-[#dab95c] bg-[#df2926] px-12 py-3 rounded' id="language">
+                        <select  className='w-[40%] outline-none border-2 border-[#dab95c] bg-[#df2926] px-12 py-3 rounded' id="language">
                             <option>Select language</option>
                             <option value="bangla">Bangla</option>
                             <option value="english">English</option>

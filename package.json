@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@syncfusion/ej2-react-inputs": "^28.1.41",
     "country-state-city": "^3.2.1",
     "flowbite-react": "^0.10.2",
     "next": "15.0.4",

@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 
 const page = () => {
@@ -51,7 +52,14 @@ const page = () => {
                 <h2 className='text-center text-2xl font-medium'>Occuption</h2>
                 <hr className='w-[40%] mx-auto h-1 bg-[#dab95c] my-3' />
 
-                <input type="text" name="nid" className='block outline-none w-[50%] mx-auto p-2 border-2 border-[#dab95c] bg-[#df2926] rounded' placeholder='occupation drop down menu'/>
+                {/* <input type="text" name="nid" className='block outline-none w-[50%] mx-auto p-2 border-2 border-[#dab95c] bg-[#df2926] rounded' placeholder='occupation drop down menu'/> */}
+                <select onChange={(e) => console.log(e.target.value)
+                  } className='block outline-none w-[50%] mx-auto p-2 border-2 border-[#dab95c] bg-[#df2926] rounded'  id="profession">
+                    <option>Select Profession</option>
+                    <option value="student">Student</option>
+                    <option value="job">Job</option>
+                    <option value="uunemployed">unemployed</option>
+                </select>
             </div>
 
             <div className='my-6'>
