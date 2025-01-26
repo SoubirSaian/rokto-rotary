@@ -10,9 +10,11 @@ export default function Home() {
         <Link href="/profile" className="mx-3 my-4 px-3 py-3 bg-[#dab95c] rounded">Profile</Link>
         <Link href="/register" className="mx-3 my-4 px-3 py-3 bg-[#dab95c] rounded">register</Link>
         <Link href="/signup" className="mx-3 my-4 px-3 py-3 bg-[#dab95c] rounded">signup</Link>
-        <Link href="/terms" className="mx-3 my-4 px-3 py-3 bg-[#dab95c] rounded">terms</Link>
         <Link href="/signup/verify" className="mx-3 my-4 px-3 py-3 bg-[#dab95c] rounded">verify</Link>
         <Link href="/signup/forget" className="mx-3 my-4 px-3 py-3 bg-[#dab95c] rounded">forget</Link>
+        <Link href="/location" className="mx-3 my-4 px-3 py-3 bg-[#dab95c] rounded">Location</Link>
+        <Link href="/optional" className="mx-3 my-4 px-3 py-3 bg-[#dab95c] rounded">Optional</Link>
+        <Link href="/terms" className="mx-3 my-4 px-3 py-3 bg-[#dab95c] rounded">terms</Link>
         
     </div>
   );
