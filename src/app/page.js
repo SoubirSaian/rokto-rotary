@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-[200px]">
+    <div className="min-h-1vh my-[100px] md:my-[30px] grid grid-cols-3 md:grid-cols-5 gap-3">
         <Link href="/health" className="mx-3 my-4 px-3 py-3 bg-[#dab95c] rounded">Health</Link>
         <Link href="/eligiblity" className="mx-3 my-4 px-3 py-3 bg-[#dab95c] rounded">eligiblity</Link>
         <Link href="/photo" className="mx-3 my-4 px-3 py-3 bg-[#dab95c] rounded">Photo</Link>

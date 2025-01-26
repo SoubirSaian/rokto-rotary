@@ -4,35 +4,35 @@ const Health = () => {
     return (
         <div className='w-[80%] mx-auto my-4'>
             <div>
-                 <h2 className='text-center text-3xl text-white'>Eligiblity Authentication: Health</h2>
+                 <h2 className='text-center sm:text-xl md:text-3xl text-white'>Eligiblity Authentication: Health</h2>
                 <hr className='w-[60%] mx-auto h-1 bg-[#dab95c]' />
             </div>
 
             <div className='my-6'>
-                <h2 className='text-center text-2xl font-semibold text-black'>At any age, Do you have any history of</h2>
+                <h2 className='text-center sm:text-xl md:text-2xl font-semibold text-black'>At any age, Do you have any history of</h2>
                 <hr className='w-[60%] mx-auto h-1 bg-[#dab95c]' />
 
-                <div className='flex justify-around items-center px-[20%] my-4'>
+                <div className='flex justify-around items-center md:px-[20%] my-4'>
                     <div>
-                        <h2 className='text-2xl '>HEPATITIS B</h2>
+                        <h2 className='sm:text-xl md:text-2xl '>HEPATITIS B</h2>
                         <hr  className='w-full h-1 bg-[#dab95c]' />
                     </div>
 
-                    <fieldset className='flex justify-around gap-12 mt-6'>
+                    <fieldset className='flex justify-around sm:gap-8 md:gap-12 mt-6'>
                     {/* <legend className="sr-only">Countries</legend> */}
 
                      
 
                         <div className="flex items-center mb-4">
-                            <input id="country-option-2" type="radio" name="countries" value="Germany" className="w-4 h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
-                            <label htmlFor="country-option-2" className="block ms-2 text-3xl font-medium ">
+                            <input id="country-option-2" type="radio" name="countries" value="Germany" className="sm:w-2 md:w-4 sm:h-2 md:h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
+                            <label htmlFor="country-option-2" className="block ms-2 sm:text-xl md:text-3xl font-medium ">
                             YES
                             </label>
                         </div>
 
                         <div className="flex items-center mb-4">
-                            <input id="country-option-3" type="radio" name="countries" value="Spain" className="w-4 h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
-                            <label htmlFor="country-option-3" className="block ms-2 text-3xl font-medium  ">
+                            <input id="country-option-3" type="radio" name="countries" value="Spain" className="sm:w-2 md:w-4 sm:h-2 md:h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
+                            <label htmlFor="country-option-3" className="block ms-2 sm:text-xl md:text-3xl font-medium  ">
                             NO
                             </label>
                         </div>
@@ -41,27 +41,27 @@ const Health = () => {
 
                 </div>
 
-                <div className='flex justify-around items-center px-[20%] my-4'>
+                <div className='flex justify-around items-center md:px-[20%] my-4'>
                     <div>
-                        <h2 className='text-2xl '>HEPATITIS C</h2>
+                        <h2 className='sm:text-xl md:text-2xl '>HEPATITIS C</h2>
                         <hr  className='w-full h-1 bg-[#dab95c]' />
                     </div>
 
-                    <fieldset className='flex justify-around gap-12 mt-6'>
+                    <fieldset className='flex justify-around sm:gap-6 md:gap-12 mt-6'>
                     {/* <legend className="sr-only">Countries</legend> */}
 
                      
 
                         <div className="flex items-center mb-4">
-                            <input id="country-option-2" type="radio" name="countries" value="Germany" className="w-4 h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
-                            <label htmlFor="country-option-2" className="block ms-2 text-3xl font-medium ">
+                            <input id="country-option-2" type="radio" name="countries" value="Germany" className="sm:w-2 md:w-4 sm:h-2 md:h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
+                            <label htmlFor="country-option-2" className="block ms-2 sm:text-xl md:text-3xl font-medium ">
                             YES
                             </label>
                         </div>
 
                         <div className="flex items-center mb-4">
-                            <input id="country-option-3" type="radio" name="countries" value="Spain" className="w-4 h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
-                            <label htmlFor="country-option-3" className="block ms-2 text-3xl font-medium  ">
+                            <input id="country-option-3" type="radio" name="countries" value="Spain" className="sm:w-2 md:w-4 sm:h-2 md:h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
+                            <label htmlFor="country-option-3" className="block ms-2 sm:text-xl md:text-3xl font-medium  ">
                             NO
                             </label>
                         </div>
@@ -73,30 +73,30 @@ const Health = () => {
             </div>
 
             <div>
-                <h2 className='text-center text-3xl'>Do you have had any risk factors/ Behaviours associated with</h2>
+                <h2 className='text-center sm:text-xl md:text-3xl'>Do you have had any risk factors/ Behaviours associated with</h2>
                 <hr className='w-[90%] mx-auto h-1 bg-[#dab95c]' />
 
                 <div className='flex justify-around items-center px-[20%] my-4'>
                     <div>
-                        <h2 className='text-2xl '>HIV/AIDS</h2>
+                        <h2 className='sm:text-sm md:text-2xl '>HIV/AIDS</h2>
                         <hr  className='w-full h-1 bg-[#dab95c]' />
                     </div>
 
-                    <fieldset className='flex justify-around gap-12 mt-6'>
+                    <fieldset className='flex justify-around sm:gap-6 md:gap-12 mt-6'>
                     {/* <legend className="sr-only">Countries</legend> */}
 
                      
 
                         <div className="flex items-center mb-4">
-                            <input id="country-option-2" type="radio" name="countries" value="Germany" className="w-4 h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
-                            <label htmlFor="country-option-2" className="block ms-2 text-3xl font-medium ">
+                            <input id="country-option-2" type="radio" name="countries" value="Germany" className="sm:w-2 md:w-4 sm:h-2 md:h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
+                            <label htmlFor="country-option-2" className="block ms-2 sm:text-xl md:text-3xl font-medium ">
                             YES
                             </label>
                         </div>
 
                         <div className="flex items-center mb-4">
-                            <input id="country-option-3" type="radio" name="countries" value="Spain" className="w-4 h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
-                            <label htmlFor="country-option-3" className="block ms-2 text-3xl font-medium  ">
+                            <input id="country-option-3" type="radio" name="countries" value="Spain" className="sm:w-2 md:w-4 sm:h-2 md:h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
+                            <label htmlFor="country-option-3" className="block ms-2 sm:text-xl md:text-3xl font-medium  ">
                             NO
                             </label>
                         </div>
@@ -107,30 +107,30 @@ const Health = () => {
             </div>
 
             <div>
-                <h2 className='text-center text-3xl' >Have you ever taken any medication to treat</h2>
+                <h2 className='text-center sm:text-xl md:text-3xl' >Have you ever taken any medication to treat</h2>
                 <hr className='w-[90%] mx-auto h-1 bg-[#dab95c]' />
 
-                <div className='flex justify-around items-center px-[20%] my-4'>
+                <div className='flex justify-around items-center md:px-[20%] my-4'>
                     <div>
-                        <h2 className='text-2xl '>HIV Infections</h2>
+                        <h2 className='sm:text-sm md:text-2xl '>HIV Infections</h2>
                         <hr  className='w-full h-1 bg-[#dab95c]' />
                     </div>
 
-                    <fieldset className='flex justify-around gap-12 mt-6'>
+                    <fieldset className='flex justify-around sm:gap-6 md:gap-12 mt-6'>
                     {/* <legend className="sr-only">Countries</legend> */}
 
                      
 
                         <div className="flex items-center mb-4">
-                            <input id="country-option-2" type="radio" name="countries" value="Germany" className="w-4 h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
-                            <label htmlFor="country-option-2" className="block ms-2 text-3xl font-medium ">
+                            <input id="country-option-2" type="radio" name="countries" value="Germany" className="sm:w-2 md:w-4 sm:h-2 md:h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
+                            <label htmlFor="country-option-2" className="block ms-2 sm:text-xl  md:text-3xl font-medium ">
                             YES
                             </label>
                         </div>
 
                         <div className="flex items-center mb-4">
-                            <input id="country-option-3" type="radio" name="countries" value="Spain" className="w-4 h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
-                            <label htmlFor="country-option-3" className="block ms-2 text-3xl font-medium  ">
+                            <input id="country-option-3" type="radio" name="countries" value="Spain" className="sm:w-2 md:w-4 sm:h-2 md:h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
+                            <label htmlFor="country-option-3" className="block ms-2 sm:text-xl md:text-3xl font-medium  ">
                             NO
                             </label>
                         </div>
@@ -141,30 +141,30 @@ const Health = () => {
             </div>
 
             <div>
-                <h2 className='text-center text-3xl '>are you taking any medication to prevent</h2>
+                <h2 className='text-center sm:text-xl md:text-3xl '>are you taking any medication to prevent</h2>
                 <hr className='w-[90%] mx-auto h-1 bg-[#dab95c]' />
 
-                <div className='flex justify-around items-center px-[20%] my-4'>
+                <div className='flex justify-around items-center md:px-[20%] my-4'>
                     <div>
-                        <h2 className='text-2xl '>HIV Infection</h2>
+                        <h2 className='sm:text-sm md:text-2xl '>HIV Infection</h2>
                         <hr  className='w-full h-1 bg-[#dab95c]' />
                     </div>
 
-                    <fieldset className='flex justify-around gap-12 mt-6'>
+                    <fieldset className='flex justify-around sm:gap-6 md:gap-12 mt-6'>
                     {/* <legend className="sr-only">Countries</legend> */}
 
                      
 
                         <div className="flex items-center mb-4">
-                            <input id="country-option-2" type="radio" name="countries" value="Germany" className="w-4 h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
-                            <label htmlFor="country-option-2" className="block ms-2 text-3xl font-medium ">
+                            <input id="country-option-2" type="radio" name="countries" value="Germany" className="sm:w-2 md:w-4 sm:h-2 md:h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
+                            <label htmlFor="country-option-2" className="block ms-2 sm:text-xl md:text-3xl font-medium ">
                             YES
                             </label>
                         </div>
 
                         <div className="flex items-center mb-4">
-                            <input id="country-option-3" type="radio" name="countries" value="Spain" className="w-4 h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
-                            <label htmlFor="country-option-3" className="block ms-2 text-3xl font-medium  ">
+                            <input id="country-option-3" type="radio" name="countries" value="Spain" className="sm:w-2 md:w-4 sm:h-2 md:h-4 border-[#dab95c] focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
+                            <label htmlFor="country-option-3" className="block ms-2 sm:text-xl md:text-3xl font-medium  ">
                             NO
                             </label>
                         </div>
